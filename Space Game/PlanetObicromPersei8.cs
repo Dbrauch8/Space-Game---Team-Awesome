@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Space_Game
 {
-    class PlanetEarth
+    class PlanetObicromPersei8
     {
         public void MainEntrance()
         {
             Console.Clear();
-            Console.WriteLine("Main Trading Port of Earth");
+            Console.WriteLine("Main Trading Port of Obicrom Persei 8");
             Console.WriteLine();
             Console.WriteLine("You stand in the midst of a bustling trade center.  There are various\n" +
                               "shops and stalls littering the central square. You notice\n" +
@@ -62,13 +62,14 @@ namespace Space_Game
         public static void LeavePlanet()
         {
             Console.Clear();
-            Console.WriteLine("As you prepare to depart Earth you double check your inventory\n" +
-                              "and fuel to make sure you haven't forgot anything. Time to go make\n" +
-                              "a profit! Where is your next destination?");
+            Console.WriteLine("As you prepare to depart Obicrom Persei 8 you double check your\n" +
+                              "inventory and fuel to make sure you haven't forgot anything. Time to \n" +
+                              "go make a profit! Where is your next destination?");
             Console.WriteLine();
             Console.WriteLine("\t1. Planet Titan AE (300 lite years)");
             Console.WriteLine("\t2. Planet ALpha Centurian (1000 lite years)");
             Console.WriteLine("\t3. Planet Proxima B (500 lite years)");
+            Console.WriteLine("\t4. Planet Earth (500 lite years)");
             Console.WriteLine();
             Console.Write("Select a destination: ");
             var destination = Console.ReadLine();
@@ -85,6 +86,10 @@ namespace Space_Game
                 case "3":
                     PlanetProximaB planetProxima = new PlanetProximaB();
                     planetProxima.MainEntrance();
+                    break;
+                case "4":
+                    PlanetEarth planetEarth = new PlanetEarth();
+                    planetEarth.MainEntrance();
                     break;
                 default:
                     LeavePlanet();

@@ -17,7 +17,12 @@ namespace Space_Game
         public void Speed()
         {
             //tied to fuel level, as speed is increased n% as fuel level decreases/tied to time. 
+            // Warp Speed Formula: 
 
+            var w;
+            double v;
+
+            v(W) = W(10/3) + Math.Pow(10.0 - 5.0,(3.67)); //Original formula => v(W) = (-11 / 3)= -3.67;
         }
         public void CargoLevel()
         {

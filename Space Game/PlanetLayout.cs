@@ -6,25 +6,12 @@ using System.Threading.Tasks;
 
 namespace Space_Game
 {
-    public class PlanetTitanAE
+    public class PlanetLayout
     {
-        
+        PlanetTitanAE planetMain = new PlanetTitanAE();
 
-        public void MainEntrance()
+        public void DirectionResponse()
         {
-            Console.Clear();
-            Console.WriteLine("Main Trading Port of Titan AE");
-            Console.WriteLine();
-            Console.WriteLine("You stand in the midst of a bustling trade center.  There are various\n" +
-                              "shops and stalls littering the central square. You notice\n" +
-                              "one seedy character in particular who seems to be giving you\n" +
-                              "the stink eye. You notice a fuel station to the north, and\n" +
-                              "shops to the east and the west.");
-            Console.WriteLine();
-            Console.WriteLine("Seedy Character");
-            Console.WriteLine();
-            Console.WriteLine("Exits: North, West, East, Leave");
-            Console.WriteLine();
             var direction = Console.ReadLine();
             switch (direction.ToLower())
             {
@@ -54,7 +41,7 @@ namespace Space_Game
                         "\"I wouldn't buy grain here, it's cheaper on Alpha\".");
                     break;
                 default:
-                    MainEntrance();
+                    planetMain.MainEntrance();
                     break;
             }
         }
@@ -87,10 +74,10 @@ namespace Space_Game
                     SellItem();
                     break;
                 case "east":
-                    MainEntrance();
+                    planetMain.MainEntrance();
                     break;
                 case "e":
-                    MainEntrance();
+                    planetMain.MainEntrance();
                     break;
                 default:
                     TradingDepotOne();
@@ -123,7 +110,4 @@ namespace Space_Game
 
         }
     }
-
-        
-    
 }

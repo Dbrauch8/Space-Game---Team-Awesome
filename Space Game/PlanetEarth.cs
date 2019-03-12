@@ -8,5 +8,24 @@ namespace Space_Game
 {
     class PlanetEarth
     {
+        public void MainEntrance()
+        {
+
+        }
+
+        public void TradingDepotOne()
+        {
+
+        }
+
+        public void TradingDepotTwo()
+        {
+
+        }
+
+        public void FuelStation()
+        {
+
+        }
     }
 }

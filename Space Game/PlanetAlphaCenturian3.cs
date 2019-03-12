@@ -8,5 +8,24 @@ namespace Space_Game
 {
     class PlanetAlphaCenturian3
     {
+        public void MainEntrance()
+        {
+
+        }
+
+        public void TradingDepotOne()
+        {
+
+        }
+
+        public void TradingDepotTwo()
+        {
+
+        }
+
+        public void FuelStation()
+        {
+
+        }
     }
 }

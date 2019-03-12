@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="PlanetAlphaCenturian3.cs" />
     <Compile Include="PlanetEarth.cs" />
+    <Compile Include="PlanetLayout.cs" />
     <Compile Include="PlanetProximaB.cs" />
     <Compile Include="PlanetTitanAE.cs" />
     <Compile Include="Program.cs" />

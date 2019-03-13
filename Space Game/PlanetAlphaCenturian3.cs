@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Space_Game
 {
+    
     class PlanetAlphaCenturian3
     {
+        
         public void MainEntrance()
         {
             Console.Clear();
@@ -69,6 +71,7 @@ namespace Space_Game
 
         public static void LeavePlanet()
         {
+            RaiderAttack raiderAttack = new RaiderAttack();
             Console.Clear();
             Console.WriteLine("As you prepare to depart Alpha Centurian 3 you double check your inventory\n" +
                               "and fuel to make sure you haven't forgot anything. Time to go make\n" +
@@ -77,24 +80,31 @@ namespace Space_Game
             Console.WriteLine("\t1. Planet Earth (300 lite years)");
             Console.WriteLine("\t2. Planet Titan AE (1000 lite years)");
             Console.WriteLine("\t3. Planet Proxima B (500 lite years)");
+            Console.WriteLine("\t4. Planet Obicrom Persei 8 (2000 lite years)");
             Console.WriteLine();
             Console.Write("Select a destination: ");
             var destination = Console.ReadLine();
             switch (destination)
             {
                 case "1":
+                    raiderAttack.Raiders();
                     PlanetEarth planetEarth = new PlanetEarth();
                     planetEarth.MainEntrance();
                     break;
                 case "2":
-                    RaiderAttack raiderAttack = new RaiderAttack();
                     raiderAttack.Raiders();
                     PlanetTitanAE planetTitan = new PlanetTitanAE();
                     planetTitan.MainEntrance();
                     break;
                 case "3":
+                    raiderAttack.Raiders();
                     PlanetProximaB planetProxima = new PlanetProximaB();
                     planetProxima.MainEntrance();
+                    break;
+                case "4":
+                    raiderAttack.Raiders();
+                    PlanetObicromPersei8 planetObicrom = new PlanetObicromPersei8();
+                    planetObicrom.MainEntrance();
                     break;
                 default:
                     LeavePlanet();
@@ -187,7 +197,48 @@ namespace Space_Game
 
         public void FuelStation()
         {
+            Console.Clear();
+            Console.WriteLine("Helium 3 Express");
+            Console.WriteLine();
+            Console.WriteLine("You pull up to the Helium 3 Express.  Thankfully the days\n" +
+                              "of fuel grades are gone.  You only have the one choice. Helium 3.\n" +
+                              "The price is 50 credits a unit. Time to decide if you fill up\n" +
+                              "or put in what you can afford");
+            Console.WriteLine();
+            Console.WriteLine("Options: \"Fill up\" or enter the number of units you'd like to buy.\n" +
+                              "(i.e. If you enter 50, you will purchase 50 units.");
+            Console.WriteLine();
+            Console.WriteLine("Exits: South");
+            var stationInput = Console.ReadLine();
+            
+            switch(stationInput.ToLower())
+            {
+                case "s":
+                    MainEntrance();
+                    break;
+                case "south":
+                    MainEntrance();
+                    break;
+                case "fill up":
+                    FillUp();
+                    break;
+                case "enter units":
+                    PutUnitsIn();
+                    break;
+                default:
+                    FuelStation();
+                    break;
+            }
+        }
 
+        private static void PutUnitsIn()
+        {
+            PutUnitsIn();
+        }
+
+        private static void FillUp()
+        {
+            FillUp();
         }
 
         public void InventoryListTwo()

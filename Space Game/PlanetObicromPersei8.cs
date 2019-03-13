@@ -61,6 +61,7 @@ namespace Space_Game
 
         public static void LeavePlanet()
         {
+            RaiderAttack raiderAttack = new RaiderAttack();
             Console.Clear();
             Console.WriteLine("As you prepare to depart Obicrom Persei 8 you double check your\n" +
                               "inventory and fuel to make sure you haven't forgot anything. Time to \n" +
@@ -76,18 +77,22 @@ namespace Space_Game
             switch (destination)
             {
                 case "1":
+                    raiderAttack.Raiders();
                     PlanetTitanAE planetTitan = new PlanetTitanAE();
                     planetTitan.MainEntrance();
                     break;
                 case "2":
+                    raiderAttack.Raiders();
                     PlanetAlphaCenturian3 planetAlpha = new PlanetAlphaCenturian3();
                     planetAlpha.MainEntrance();
                     break;
                 case "3":
+                    raiderAttack.Raiders();
                     PlanetProximaB planetProxima = new PlanetProximaB();
                     planetProxima.MainEntrance();
                     break;
                 case "4":
+                    raiderAttack.Raiders();
                     PlanetEarth planetEarth = new PlanetEarth();
                     planetEarth.MainEntrance();
                     break;
@@ -182,7 +187,48 @@ namespace Space_Game
 
         public void FuelStation()
         {
+            Console.Clear();
+            Console.WriteLine("Helium 3 Express");
+            Console.WriteLine();
+            Console.WriteLine("You pull up to the Helium 3 Express.  Thankfully the days\n" +
+                              "of fuel grades are gone.  You only have the one choice. Helium 3.\n" +
+                              "The price is 50 credits a unit. Time to decide if you fill up\n" +
+                              "or put in what you can afford");
+            Console.WriteLine();
+            Console.WriteLine("Options: \"Fill up\" or enter the number of units you'd like to buy.\n" +
+                              "(i.e. If you enter 50, you will purchase 50 units.");
+            Console.WriteLine();
+            Console.WriteLine("Exits: South");
+            var stationInput = Console.ReadLine();
 
+            switch (stationInput.ToLower())
+            {
+                case "s":
+                    MainEntrance();
+                    break;
+                case "south":
+                    MainEntrance();
+                    break;
+                case "fill up":
+                    FillUp();
+                    break;
+                case "enter units":
+                    PutUnitsIn();
+                    break;
+                default:
+                    FuelStation();
+                    break;
+            }
+        }
+
+        private static void PutUnitsIn()
+        {
+            PutUnitsIn();
+        }
+
+        private static void FillUp()
+        {
+            FillUp();
         }
 
         public void InventoryListTwo()

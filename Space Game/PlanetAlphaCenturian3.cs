@@ -62,6 +62,7 @@ namespace Space_Game
                         "\"I wouldn't buy grain here, it's cheaper on Alpha\".");
                     Console.WriteLine("(Press enter to continue)");
                     Console.ReadLine();
+                    MainEntrance();
                     break;
                 default:
                     MainEntrance();

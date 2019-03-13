@@ -52,6 +52,7 @@ namespace Space_Game
                         "\"I wouldn't buy grain here, it's cheaper on Alpha\".");
                     Console.WriteLine("(Press enter to continue)");
                     Console.ReadLine();
+                    MainEntrance();
                     break;
                 default:
                     MainEntrance();
@@ -212,8 +213,7 @@ namespace Space_Game
                               "The price is 50 credits a unit. Time to decide if you fill up\n" +
                               "or put in what you can afford");
             Console.WriteLine();
-            Console.WriteLine("Options: \"Fill up\" or enter the number of units you'd like to buy.\n" +
-                              "(i.e. If you enter 50, you will purchase 50 units.");
+            Console.WriteLine("Options: (type \"fill up\" or \"enter units\")");
             Console.WriteLine();
             Console.WriteLine("Exits: South");
             var stationInput = Console.ReadLine();

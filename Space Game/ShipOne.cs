@@ -28,7 +28,7 @@ namespace Space_Game
             Console.WriteLine("FALCON 5 \nThe Falcon 5 is your sportscar of the universe. It is fast and maneuverable, " +
                 "but is limited on fuel and cargo." +
                 " \nIf you need to get there fast and outrun most space pirates, this is your space ship!");
-            Console.WriteLine("SPECS: Max Fuel=>  {0} | Max Cargo=>  {1} | Max Speed=>  | {2} Cost=> {3}",
+            Console.WriteLine("SPECS: Max Fuel=>  {0} | Max Cargo=>  {1} | Max Speed=>  {2} | Cost=> {3}",
                 falconFive.MaxFuel,
                 falconFive.MaxCargo,
                 falconFive.MaxSpeed,
@@ -44,7 +44,7 @@ namespace Space_Game
             Console.WriteLine("SPACEBALL 1 \n SpaceBall 1 is the ship for those who want to buy in bulk and carry a lot of cargo to the next planet." +
                 " \nIf you are that type of intergalactic merchant, SpaceBall 1 is your ride!");
             
-            Console.WriteLine("SPECS:  Max Fuel=>  {0} | Max Cargo=>  {1} | Max Speed=>  | {2} Cost=> {3}",
+            Console.WriteLine("SPECS:  Max Fuel=>  {0} | Max Cargo=>  {1} | Max Speed=>  {2} | Cost=> {3}",
             spaceBallOne.MaxFuel,
             spaceBallOne.MaxCargo,
             spaceBallOne.MaxSpeed,
@@ -97,8 +97,13 @@ namespace Space_Game
         {
             Console.WriteLine("Congratulations!! You selected " + myShip.Name);
             Console.WriteLine("\nIts time to kick the tires and light the fires!");
-            Console.ReadLine();
 
+            Console.WriteLine("\nPerformance parameters for your ship are: " +  "\nMax Fuel=>  {0} | Max Cargo=>  {1} | Max Speed=> {2}",
+                myShip.MaxFuel, 
+                myShip.MaxCargo, 
+                myShip.MaxSpeed);
+
+            Console.ReadLine();
         }
 
         //}

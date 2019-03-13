@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-//using Xamarin.Forms;
-
-/*namespace Space_Game
+namespace Space_Game
 {
 
     public class SpaceShip
@@ -90,5 +88,4 @@ using System.Text;
         //}
     }
 
-    }
-}*/
+}

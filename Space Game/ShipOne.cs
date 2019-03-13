@@ -10,131 +10,85 @@ using System.Text;
 
     public class SpaceShip
     {
-
-
-
-
         public string Name { get; private set; }
         public double MaxFuel { get; private set; }
         public double MaxCargo { get; private set; }
         public double MaxSpeed { get; private set; }
+        public string Cost { get; set; }
 
-       public void Ship(string ships)
+        public void Ship(string ships)
         {
             Console.WriteLine("Choose Your Ship");
-            Console.WriteLine("----------------------------------");
+            Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
             SpaceShip falconFive = new SpaceShip();
             falconFive.MaxFuel = 80;
             falconFive.MaxCargo = 80;
             falconFive.MaxSpeed = 120;
+            falconFive.Cost = "$50,000";
 
-            Console.WriteLine("The Falcon 5 is your sportscar of the universe. It is fast and maneuverable, " +
+            Console.WriteLine("FALCON 5 \nThe Falcon 5 is your sportscar of the universe. It is fast and maneuverable, " +
                 "but is limited on fuel and cargo." +
                 " \nIf you need to get there fast and outrun most space pirates, this is your space ship!");
-            Console.WriteLine("Falcon 5 Specs");
-            Console.WriteLine("*******************");
-            Console.WriteLine("Max Fuel=>  {0} \nMax Cargo=>  {1} \nMax Speed=>  {2}",
+            Console.WriteLine("SPECS: Max Fuel=>  {0} | Max Cargo=>  {1} | Max Speed=>  | {2} Cost=> {3}",
                 falconFive.MaxFuel,
                 falconFive.MaxCargo,
-                falconFive.MaxSpeed);
+                falconFive.MaxSpeed,
+                falconFive.Cost);
+            Console.WriteLine("************************************************************************************************************************");
             SpaceShip spaceBallOne = new SpaceShip();
             spaceBallOne.MaxFuel = 150;
             spaceBallOne.MaxCargo = 150;
             spaceBallOne.MaxSpeed = 80;
-            Console.WriteLine("1) Press 1 to choose Falcon 5");
+            spaceBallOne.Cost = "$45,000";
 
-            Console.WriteLine("\nSpaceBall 1 is the ship for those who want to buy in bulk and carry a lot of cargo to the next planet." +
+            Console.WriteLine("SPACEBALL 1 \n SpaceBall 1 is the ship for those who want to buy in bulk and carry a lot of cargo to the next planet." +
                 " \nIf you are that type of intergalactic merchant, SpaceBall 1 is your ride!");
-            Console.WriteLine("SpaceBall 1 Specs");
-            Console.WriteLine("*******************");
-            Console.WriteLine("Max Fuel=>  {0} \nMax Cargo=>  {1} \nMax Speed=>  {2}",
+            
+            Console.WriteLine("SPECS:  Max Fuel=>  {0} | Max Cargo=>  {1} | Max Speed=>  | {2} Cost=> {3}",
             spaceBallOne.MaxFuel,
             spaceBallOne.MaxCargo,
-            spaceBallOne.MaxSpeed);
-            Console.WriteLine("2) Press 2 to choose SpaceBall One");
+            spaceBallOne.MaxSpeed,
+            spaceBallOne.Cost);
+            Console.WriteLine("************************************************************************************************************************");
 
             SpaceShip jupiterTwo = new SpaceShip();
             jupiterTwo.MaxFuel = 100;
             jupiterTwo.MaxCargo = 100;
             jupiterTwo.MaxSpeed = 100;
-            Console.WriteLine("\nAre you looking for the best balance of speed, cargo and comfort? Meet the Jupiter 2." +
-                " \nThe Jupiter 2 will get you where you need to go with everything you need in a modest amount of time." + 
+            jupiterTwo.Cost = "$40,000";
+            Console.WriteLine("Jupiter 2 \nAre you looking for the best balance of speed, cargo and comfort? Meet the Jupiter 2." +
+                " \nThe Jupiter 2 will get you where you need to go with everything you need in a modest amount of time." +
                 " \nIf you like economy of all features, this is your ship!");
-            Console.WriteLine("Jupiter 2 Specs");
-            Console.WriteLine("*******************");
-            Console.WriteLine("Max Fuel=>  {0} \nMax Cargo=>  {1} \nMax Speed=>  {2}",
+            Console.WriteLine(" Max Fuel=>  {0} | Max Cargo=>  {1} | Max Speed=>  | {2} Cost=> {3}",
                 jupiterTwo.MaxFuel,
                 jupiterTwo.MaxCargo,
-                jupiterTwo.MaxSpeed);
-            Console.WriteLine("3) Press 3 to choose the Jupiter 2");
-
+                jupiterTwo.MaxSpeed,
+                jupiterTwo.Cost);
+            Console.WriteLine("************************************************************************************************************************");
+            Console.WriteLine("Make your seletion >> (1) for the Falcon 5 | (2) for the SpaceBall 1 | (3) for the Jupiter 2");
             Console.ReadLine();
         }
 
-        public void CargoLevel()
-        {
-            //Placeholder Array / List of inventory items. 
-            //Maximum quantity level (space and weight)
-        }
 
-    //    public void Speed()
-    //    {
-    //        //tied to fuel level, as speed is increased n% as fuel level decreases/tied to time. 
-    //        // Warp Speed Formula: 
 
-    //        var w;
-    //        double v;
+        //}
 
-    //        v(W) = W(10 / 3) + Math.Pow(10.0 - 5.0, (3.67)); //Original formula => v(W) = (-11 / 3)= -3.67;
-    //    }
+        //public void CargoLevel()
+        //{
+        //    //Placeholder Array / List of inventory items. 
+        //    //Maximum quantity level (space and weight)
+        //}
 
-    //}
-    //public class ShipTwo
-    //{
-    //    public void FuelLevel()
-    //    {
-    //        //Determine unit of measure
-    //        //tied to speed, need a formula for fuel consumption related to speed
-    //    }
-    //    public void Speed()
-    //    {
-    //        //tied to fuel level, as speed is increased n% as fuel level decreases/tied to time. 
-    //        // Warp Speed Formula: 
+        //public void Speed()
+        //{
+        //    // Warp Speed Formula: 
 
-    //        var w;
-    //        double v;
+        //    var w;
+        //    double v;
 
-    //        v(W) = W(10 / 3) + Math.Pow(10.0 - 5.0, (3.67)); //Original formula => v(W) = (-11 / 3)= -3.67;
-    //    }
-    //    public void CargoLevel()
-    //    {
-    //        //Placeholder Array / List of inventory items. 
-    //        //Maximum quantity level (space and weight)
-    //    }
-
-    //}
-    //public class ShipThree
-    //{
-    //    public void FuelLevel()
-    //    {
-    //        //Determine unit of measure
-    //        //tied to speed, need a formula for fuel consumption related to speed
-    //    }
-    //    public void Speed()
-    //    {
-    //        //tied to fuel level, as speed is increased n% as fuel level decreases/tied to time. 
-    //        // Warp Speed Formula: 
-
-    //        var w;
-    //        double v;
-
-    //        v(W) = W(10 / 3) + Math.Pow(10.0 - 5.0, (3.67)); //Original formula => v(W) = (-11 / 3)= -3.67;
-    //    }
-    //    public void CargoLevel()
-    //    {
-    //        //Placeholder Array / List of inventory items. 
-    //        //Maximum quantity level (space and weight)
-}
+        //    v(W) = W(10 / 3) + Math.Pow(10.0 - 5.0, (3.67)); //Original formula => v(W) = (-11 / 3)= -3.67;
+        //}
+    }
 
     }
 }*/

@@ -43,7 +43,7 @@ namespace Space_Game
 
             Console.WriteLine("SPACEBALL 1 \n SpaceBall 1 is the ship for those who want to buy in bulk and carry a lot of cargo to the next planet." +
                 " \nIf you are that type of intergalactic merchant, SpaceBall 1 is your ride!");
-            
+
             Console.WriteLine("SPECS:  Max Fuel=>  {0} | Max Cargo=>  {1} | Max Speed=>  {2} | Cost=> {3}",
             spaceBallOne.MaxFuel,
             spaceBallOne.MaxCargo,
@@ -98,20 +98,23 @@ namespace Space_Game
             Console.WriteLine("Congratulations!! You selected " + myShip.Name);
             Console.WriteLine("\nIts time to kick the tires and light the fires!");
 
-            Console.WriteLine("\nPerformance parameters for your ship are: " +  "\nMax Fuel=>  {0} | Max Cargo=>  {1} | Max Speed=> {2}",
-                myShip.MaxFuel, 
-                myShip.MaxCargo, 
+            Console.WriteLine("\nPerformance parameters for your ship: " + "\nMax Fuel=>  {0} | Max Cargo=>  {1} | Max Speed=> {2}",
+                myShip.MaxFuel,
+                myShip.MaxCargo,
                 myShip.MaxSpeed);
 
             Console.ReadLine();
         }
 
-        //}
-        //public void CargoLevel()
-        //{
-        //    //Placeholder Array / List of inventory items. 
-        //    //Maximum quantity level (space and weight)
-        //}
+        public void CargoInventory()
+        {
+            //double weight;
+            double space;
+
+            
+            //Placeholder Array / List of inventory items. 
+            //Maximum quantity level (space and weight)
+        }
 
         //public void Speed()
         //{

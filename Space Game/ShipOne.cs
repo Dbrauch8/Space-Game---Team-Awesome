@@ -28,11 +28,11 @@ namespace Space_Game
             falconFive.MaxRange = 1331;
             falconFive.Cost = "$50,000";
             falconFive.Name = "Falcon 5";
-            Console.WriteLine("FALCON 5 \nThe Falcon 5 is your sportscar of the universe. It is fast and maneuverable, " +
-                "but is limited on fuel and cargo." +
+            Console.WriteLine("FALCON 5 \nThe Falcon 5 is your sportscar of the universe. It is the fastest ship in the fleet, able to achieve 'Ludakris speed'." +
+                "\nIt is also ver maneuverable. Your limitations are fuel and cargo capacity." +
                 " \nIf you need to get there fast and outrun most space pirates, this is your space ship!");
             Console.WriteLine("SPECS: Max Fuel=>  {0} | Max Cargo=>  {1} | Max Warp Speed=>  {2} | Range (LightYears)=> {3} | Cost=> {4}",
-                falconFive.MaxFuel, falconFive.MaxCargo, falconFive.MaxWarpSpeed, falconFive.Cost);
+                falconFive.MaxFuel, falconFive.MaxCargo, falconFive.MaxWarpSpeed, falconFive.MaxRange, falconFive.Cost);
 
             Console.WriteLine("************************************************************************************************************************");
             SpaceShip spaceBallOne = new SpaceShip();
@@ -101,7 +101,7 @@ namespace Space_Game
             Console.WriteLine("\nIts time to kick the tires and light the fires!");
             Console.ReadLine();
         }
-
+        /*
         public void CargoInventory()
         {
             //double weight;
@@ -119,7 +119,7 @@ namespace Space_Game
         //    double v;
 
         //    v(W) = W(10 / 3) + Math.Pow(10.0 - 5.0, (3.67)); //Original formula => v(W) = (-11 / 3)= -3.67;
-        //}
+        //}*/
     }
 
     }

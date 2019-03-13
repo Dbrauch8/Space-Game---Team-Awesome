@@ -18,24 +18,24 @@ namespace Space_Game
        public void Ship(string ships)
         {
             Console.WriteLine("Choose Your Ship");
-            Console.WriteLine("----------------");
-            Console.WriteLine("1) Press 1 to choose Falcon 5");
+            Console.WriteLine("----------------------------------");
             SpaceShip falconFive = new SpaceShip();
             falconFive.FuelLevel = 80;
             falconFive.CargoLevel = 80;
             falconFive.MaxSpeed = 150;
 
-            Console.WriteLine("\nMax Fuel=>  {0} \nMax Cargo=>  {1} \nMax Speed=>  {2}",
+            Console.WriteLine("1) Press 1 to choose Falcon 5");
+            Console.WriteLine("Fuel=>  {0} \nMax Cargo=>  {1} \nMax Speed=>  {2}",
                 falconFive.FuelLevel,
                 falconFive.CargoLevel,
                 falconFive.MaxSpeed);
 
-            Console.WriteLine("2) Press 2 to choose SpaceBall One");
             SpaceShip spaceBallOne = new SpaceShip();
             spaceBallOne.FuelLevel = 150;
             spaceBallOne.CargoLevel = 150;
             spaceBallOne.MaxSpeed = 80;
-            Console.WriteLine("\nMax Fuel=>  {0} \nMax Cargo=>  {1} \nMax Speed=>  {2}",
+            Console.WriteLine("\n2) Press 2 to choose SpaceBall One");
+            Console.WriteLine("Fuel=>  {0} \nMax Cargo=>  {1} \nMax Speed=>  {2}",
             spaceBallOne.FuelLevel,
             spaceBallOne.CargoLevel,
             spaceBallOne.MaxSpeed);
@@ -44,14 +44,13 @@ namespace Space_Game
             jupiterTwo.FuelLevel = 100;
             jupiterTwo.CargoLevel = 100;
             jupiterTwo.MaxSpeed = 100;
-            Console.WriteLine("3) Press 3 to choose Jupiter 2");
-            Console.WriteLine("\nMax Fuel=>  {0} \nMax Cargo=>  {1} \nMax Speed=>  {2}",
+            Console.WriteLine("\n3) Press 3 to choose Jupiter 2");
+            Console.WriteLine("Fuel=>  {0} \nMax Cargo=>  {1} \nMax Speed=>  {2}",
                 jupiterTwo.FuelLevel,
                 jupiterTwo.CargoLevel,
                 jupiterTwo.MaxSpeed);
 
             Console.ReadLine();
-
         }
 
 

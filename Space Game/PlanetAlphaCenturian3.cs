@@ -23,17 +23,10 @@ namespace Space_Game
             Console.WriteLine();
             Console.WriteLine("Seedy Character");
             Console.WriteLine();
-            Console.WriteLine("Exits: North, West, East, Leave");
+            Console.WriteLine("Exits: North, West, East, Northwest, Leave");
             Console.WriteLine();
             var direction = Console.ReadLine();
-
-            if (direction == "hi")
-            {
-                    SeedyMansResponse();
-            }
-
             
-
             switch (direction.ToLower())
             {
                 case "north":
@@ -54,6 +47,12 @@ namespace Space_Game
                 case "e":
                     TradingDepotTwo();
                     break;
+                case "northwest":
+                    AlleyWay();
+                    break;
+                case "nw":
+                    AlleyWay();
+                    break;
                 case "leave":
                     LeavePlanet();
                     break;
@@ -70,7 +69,44 @@ namespace Space_Game
             }
         }
 
-        public static void LeavePlanet()
+        public void AlleyWay()
+        {
+            Console.Clear();
+            Console.WriteLine("Dark Alley");
+            Console.WriteLine();
+            Console.WriteLine("You've wondered into a dark alley.  There is trash\n" +
+                              "everywhere. It smells horrible.  Surprisingly you see\n" +
+                              "a very affluent looking man standing in a doorway.");
+            Console.WriteLine();
+            Console.WriteLine("Affluent Looking Man");
+            Console.WriteLine();
+            Console.WriteLine("Exits: Southeast");
+            var darkAlley = Console.ReadLine();
+            switch(darkAlley.ToLower())
+            {
+                case "hi":
+                    Console.WriteLine("The affluent looking man approaches you. He casts\n" +
+                                      "a furtive glance then speaks, \"If you can find me\n" +
+                                      "a micro transponder from planet Earth you will be\n" +
+                                      "smartly compensated\"");
+                    Console.WriteLine("(press enter to continue)");
+                    Console.ReadLine();
+                    AlleyWay();
+                    break;
+                case "southeast":
+                    MainEntrance();
+                    break;
+                case "se":
+                    MainEntrance();
+                    break;
+                default:
+                    AlleyWay();
+                    break;
+            }
+
+        }
+
+        public void LeavePlanet()
         {
             RaiderAttack raiderAttack = new RaiderAttack();
             Console.Clear();
@@ -78,10 +114,10 @@ namespace Space_Game
                               "and fuel to make sure you haven't forgot anything. Time to go make\n" +
                               "a profit! Where is your next destination?");
             Console.WriteLine();
-            Console.WriteLine("\t1. Planet Earth (300 lite years)");
-            Console.WriteLine("\t2. Planet Titan AE (1000 lite years)");
-            Console.WriteLine("\t3. Planet Proxima B (500 lite years)");
-            Console.WriteLine("\t4. Planet Obicrom Persei 8 (2000 lite years)");
+            Console.WriteLine("\t1. Planet Earth\t\t\t(300 lite years)");
+            Console.WriteLine("\t2. Planet Titan AE\t\t(1000 lite years)");
+            Console.WriteLine("\t3. Planet Proxima B\t\t(500 lite years)");
+            Console.WriteLine("\t4. Planet Obicrom Persei 8\t(2000 lite years)");
             Console.WriteLine();
             Console.Write("Select a destination: ");
             var destination = Console.ReadLine();
@@ -147,17 +183,17 @@ namespace Space_Game
             }
         }
 
-        private static void SellItem()
+        public void SellItem()
         {
             SellItem();
         }
 
-        private static void BuyItem()
+        public void BuyItem()
         {
             BuyItem();
         }
 
-        private static void InventoryList()
+        public void InventoryList()
         {
             InventoryList();
         }
@@ -232,12 +268,12 @@ namespace Space_Game
             }
         }
 
-        private static void PutUnitsIn()
+        public void PutUnitsIn()
         {
             PutUnitsIn();
         }
 
-        private static void FillUp()
+        public void FillUp()
         {
             FillUp();
         }

@@ -5,7 +5,7 @@ using System.Text;
 
 //using Xamarin.Forms;
 
-namespace Space_Game
+/*namespace Space_Game
 {
 
     public class SpaceShip
@@ -127,4 +127,5 @@ namespace Space_Game
 //        //Maximum quantity level (space and weight)
  }
 
-}
+    }
+}*/

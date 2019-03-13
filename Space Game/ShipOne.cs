@@ -64,10 +64,22 @@ namespace Space_Game
                 jupiterTwo.Cost);
             Console.WriteLine("************************************************************************************************************************");
             Console.WriteLine("Make your seletion >> (1) for the Falcon 5 | (2) for the SpaceBall 1 | (3) for the Jupiter 2");
+            int choice = int.Parse(Console.ReadLine());
             Console.ReadLine();
+
+            MyShip(choice);
         }
 
+        private void MyShip(int choice)
+        {
+                switch (choice)
+            {
+                case 1: 
 
+                    break;
+
+            }
+        }
 
         //}
 

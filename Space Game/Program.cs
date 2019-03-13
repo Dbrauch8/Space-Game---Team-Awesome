@@ -10,8 +10,8 @@ namespace Space_Game
     {
         static void Main(string[] args)
         {
-            PlanetTitanAE newPlanet = new PlanetTitanAE();
-            newPlanet.MainEntrance();
+            NexusOfTheGalaxy nexusOfTheGalaxy = new NexusOfTheGalaxy();
+            nexusOfTheGalaxy.PlanetaryChoices();
         }
     }
 }

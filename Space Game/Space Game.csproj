@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NexusOfTheGalaxy.cs" />
     <Compile Include="PlanetAlphaCenturian3.cs" />
     <Compile Include="PlanetEarth.cs" />
     <Compile Include="PlanetLayout.cs" />

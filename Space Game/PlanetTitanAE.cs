@@ -8,6 +8,7 @@ namespace Space_Game
 {
     public class PlanetTitanAE
     {
+        
         public void MainEntrance()
         {
             Console.Clear();
@@ -80,8 +81,10 @@ namespace Space_Game
             switch(destination)
             {
                 case "1":
+                    Console.WriteLine();
                     Console.WriteLine("Would you like to take a shortcut? It cuts the distance to\n" +
                                       "100 lite years, but it's risky. Yes or no?");
+                    Console.WriteLine();
                     var shortCutResponse = Console.ReadLine();
                     switch(shortCutResponse.ToLower())
                     {
@@ -154,19 +157,30 @@ namespace Space_Game
             }
         }
 
-        private static void SellItem()
+        public void SellItem()
         {
             SellItem();
         }
 
-        private static void BuyItem()
+        public void BuyItem()
         {
             BuyItem();
         }
 
-        private static void InventoryList()
+        public  void InventoryList()
         {
-            InventoryList();
+            string[] shopItems = { "Gold: 1000 credits", "Diamonds: 500 credit", "Silver: 250 credits" };
+
+            for (int x=0; x<shopItems.Length ; x++)
+            {
+                Console.WriteLine($"{x+1}: {shopItems[x]}");
+            }
+            
+            Console.WriteLine("(press Enter to continue)");
+            Console.ReadLine();
+            TradingDepotOne();
+
+
         }
 
         public void TradingDepotTwo()
@@ -251,6 +265,12 @@ namespace Space_Game
         public void InventoryListTwo()
         {
             InventoryListTwo();
+        }
+        public void ShopIems()
+        {
+
+            
+            
         }
     }
 

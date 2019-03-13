@@ -11,13 +11,13 @@ namespace Space_Game
         public void Raiders()
         {
             Random raiderChance = new Random();
-            int raiderTry = raiderChance.Next(0, 2);
+            int raiderTry = raiderChance.Next(1, 8);
             int resistanceTry = raiderChance.Next(0, 10);
             if (raiderTry == 1)
             {
                 Console.WriteLine();
                 Console.WriteLine("You've been raided!");
-                if(resistanceTry<5)
+                if(resistanceTry<4)
                 {
                     Console.WriteLine();
                     Console.WriteLine("You tried to resistance and lost! They made away\n" +

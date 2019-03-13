@@ -30,7 +30,7 @@ namespace Space_Game
             Console.WriteLine("FALCON 5 \nThe Falcon 5 is your sportscar of the universe. It is fast and maneuverable, " +
                 "but is limited on fuel and cargo." +
                 " \nIf you need to get there fast and outrun most space pirates, this is your space ship!");
-            Console.WriteLine("SPECS: Max Fuel=>  {0} | Max Cargo=>  {1} | Max Warp Speed=>  {2} | Range=> {3} | Cost=> {4}",
+            Console.WriteLine("SPECS: Max Fuel=>  {0} | Max Cargo=>  {1} | Max Warp Speed=>  {2} | Range (LightYears)=> {3} | Cost=> {4}",
                 falconFive.MaxFuel,
                 falconFive.MaxCargo,
                 falconFive.MaxWarpSpeed,
@@ -40,15 +40,15 @@ namespace Space_Game
             SpaceShip spaceBallOne = new SpaceShip();
             spaceBallOne.MaxFuel = 150;
             spaceBallOne.MaxCargo = 150;
-            spaceBallOne.MaxWarpSpeed = 7;
-            spaceBallOne.MaxRange = 343;
+            spaceBallOne.MaxWarpSpeed = 8.5;
+            spaceBallOne.MaxRange = 614;
             spaceBallOne.Cost = "$45,000";
             spaceBallOne.Name = "SpaceBall 1";
 
             Console.WriteLine("SPACEBALL 1 \n SpaceBall 1 is the ship for those who want to buy in bulk and carry a lot of cargo to the next planet." +
                 " \nIf you are that type of intergalactic merchant, SpaceBall 1 is your ride!");
 
-            Console.WriteLine("SPECS: Max Fuel=>  {0} | Max Cargo=>  {1} | Max Warp Speed=>  {2} | Range=> {3} | Cost=> {4}",
+            Console.WriteLine("SPECS: Max Fuel=>  {0} | Max Cargo=>  {1} | Max Warp Speed=>  {2} | Range (LightYears)=> {3} | Cost=> {4}",
             spaceBallOne.MaxFuel,
             spaceBallOne.MaxCargo,
             spaceBallOne.MaxWarpSpeed,
@@ -59,14 +59,14 @@ namespace Space_Game
             SpaceShip jupiterTwo = new SpaceShip();
             jupiterTwo.MaxFuel = 100;
             jupiterTwo.MaxCargo = 100;
-            jupiterTwo.MaxWarpSpeed = 9;
-            jupiterTwo.MaxRange = 729;
+            jupiterTwo.MaxWarpSpeed = 9.5;
+            jupiterTwo.MaxRange = 857;
             jupiterTwo.Cost = "$40,000";
             jupiterTwo.Name = "Jupiter 2";
             Console.WriteLine("Jupiter 2 \nAre you looking for the best balance of speed, cargo and comfort? Meet the Jupiter 2." +
                 " \nThe Jupiter 2 will get you where you need to go with everything you need in a modest amount of time." +
                 " \nIf you like economy of all features, this is your ship!");
-            Console.WriteLine("SPECS: Max Fuel=>  {0} | Max Cargo=>  {1} | Max Warp Speed=>  {2} | Range=> {3} | Cost=> {4}",
+            Console.WriteLine("SPECS: Max Fuel=>  {0} | Max Cargo=>  {1} | Max Warp Speed=>  {2} | Range (LightYears)=> {3} | Cost=> {4}",
                 jupiterTwo.MaxFuel,
                 jupiterTwo.MaxCargo,
                 jupiterTwo.MaxWarpSpeed,
@@ -102,7 +102,6 @@ namespace Space_Game
         private void ShipSelection(SpaceShip myShip)
         {
             Console.WriteLine("Congratulations!! You selected " + myShip.Name);
-            Console.WriteLine("\nIts time to kick the tires and light the fires!");
 
             Console.WriteLine("\nPerformance parameters for your ship: " + "\nMax Fuel=>  {0} | Max Cargo=>  {1} | Max Warp Speed=> {2}",
                 myShip.MaxFuel,
@@ -110,6 +109,7 @@ namespace Space_Game
                 myShip.MaxWarpSpeed,
                 myShip.MaxRange);
 
+            Console.WriteLine("\nIts time to kick the tires and light the fires!");
             Console.ReadLine();
         }
 

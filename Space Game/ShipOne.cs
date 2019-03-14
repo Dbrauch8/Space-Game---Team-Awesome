@@ -98,7 +98,13 @@ namespace Space_Game
                 myShip.MaxWarpSpeed,
                 myShip.MaxRange);
 
+            
+            double distance = 10;
+            double time = distance / myShip.MaxWarpSpeed;
+            double fuelLevel = time * 3.65;
+
             Console.WriteLine("\nIts time to kick the tires and light the fires!");
+            Console.WriteLine("Fuel remaining= " + fuelLevel);
             Console.ReadLine();
         }
         /*

@@ -98,15 +98,23 @@ namespace Space_Game
                 myShip.MaxWarpSpeed,
                 myShip.MaxRange);
 
-            
-            double distance = 10;
-            double time = distance / myShip.MaxWarpSpeed;
-            double fuelLevel = time * 3.65;
+            FuelQuantity(myShip);
+        }
+
+        private static void FuelQuantity(SpaceShip myShip)
+        {
+
+            double distance = 1;
+            double time = distance / Math.Pow (myShip.MaxWarpSpeed, 3.33333 + (Math.Pow ((10.0 - myShip.MaxWarpSpeed), 3.67)));
+            var speed = Math.Pow(myShip.MaxWarpSpeed, 3.33333 + (Math.Pow((12.0 - myShip.MaxWarpSpeed), 3.67)));
+            //double time = distance / (((myShip.MaxWarpSpeed) * ((10 / 3) + Math.Pow(12.0 - 5.0, (3.67);
+            double fuelLevel = myShip.MaxFuel - (time * myShip.MaxFuel / 365);
 
             Console.WriteLine("\nIts time to kick the tires and light the fires!");
-            Console.WriteLine("Fuel remaining= " + fuelLevel);
+            Console.WriteLine("Fuel remaining= " + fuelLevel + "\nSpeed = " + speed);
             Console.ReadLine();
         }
+
         /*
         public void CargoInventory()
         {
@@ -122,7 +130,8 @@ namespace Space_Game
         //    // Warp Speed Formula: 
 
         //    var w;
-        //    double v;
+        //    double v;\
+        \
 
         //    v(W) = W(10 / 3) + Math.Pow(10.0 - 5.0, (3.67)); //Original formula => v(W) = (-11 / 3)= -3.67;
         //}*/

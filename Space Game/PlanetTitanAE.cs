@@ -8,7 +8,6 @@ namespace Space_Game
 {
     public class PlanetTitanAE
     {
-        
         public void MainEntrance()
         {
             Console.Clear();
@@ -164,12 +163,22 @@ namespace Space_Game
 
         public void BuyItem()
         {
-            BuyItem();
+            Console.WriteLine("Which item would you like to buy?");
+            var buyItem = Console.ReadLine();
+            switch (buyItem)
+            {
+                case "buy 1":
+                   // myInventory.Add(//shopItems[1]);
+                    break;
+                default:
+                    TradingDepotOne();
+                    break;
+            }
         }
 
-        public  void InventoryList()
+        public void InventoryList()
         {
-            string[] shopItems = { "Gold: 1000 credits", "Diamonds: 500 credit", "Silver: 250 credits" };
+            string[] shopItems = {"Gold: 1000 credits", "Diamonds: 500 credit", "Silver: 250 credits" };
 
             for (int x=0; x<shopItems.Length ; x++)
             {
@@ -271,6 +280,10 @@ namespace Space_Game
 
             
             
+        }
+        public void MyInventory()
+        {
+           
         }
     }
 

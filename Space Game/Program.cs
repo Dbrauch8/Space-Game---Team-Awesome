@@ -11,7 +11,8 @@ namespace Space_Game
         static void Main(string[] args)
         {
             //SpaceShip spaceShip = new SpaceShip();
-            //spaceShip.Ship("FalconFive");
+            //spaceShip.Ship("FalconFive"); 
+            
 
             NexusOfTheGalaxy nexusOfTheGalaxy = new NexusOfTheGalaxy();
             nexusOfTheGalaxy.PlanetaryChoices();

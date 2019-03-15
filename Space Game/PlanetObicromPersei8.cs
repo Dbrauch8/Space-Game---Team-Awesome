@@ -8,6 +8,7 @@ namespace Space_Game
 {
     class PlanetObicromPersei8
     {
+        
         public void MainEntrance()
         {
             Console.Clear();
@@ -144,7 +145,13 @@ namespace Space_Game
 
         private static void BuyItem()
         {
-            BuyItem();
+            Console.WriteLine("Which item would you like to buy?");
+            var buyItem = Console.ReadLine();
+            switch(buyItem)
+            {
+                case "buy 1":
+                    break;
+            }
         }
 
         private static void InventoryList()

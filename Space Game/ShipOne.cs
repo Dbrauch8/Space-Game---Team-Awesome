@@ -17,7 +17,6 @@ namespace Space_Game
         public double MaxWarpSpeed { get; private set; }
         public double MaxRange { get; private set; }
         public string Cost { get; set; }
-
         public void Ship(string ships)
         {
             Console.WriteLine("Choose Your Ship");
@@ -96,9 +95,9 @@ namespace Space_Game
                 myShip.MaxWarpSpeed,
                 myShip.MaxRange);
 
-            //Console.ReadLine();
-            //String imgPath = Console.ReadLine(); 
-            //System.Diagnostics.Process.Start(@"C:\Users\dougc\Pictures.\falcon5.jpg", imgPath);
+            Console.ReadLine();
+            String imgPath = Console.ReadLine();
+            System.Diagnostics.Process.Start(@"C:\Users\dougc\Pictures.\falcon5.jpg", imgPath);
 
 
 

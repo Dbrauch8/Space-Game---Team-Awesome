@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace Space_Game
 {
-    class RaiderAttack
+    class RaidersAttack
     {
         public void Raiders()
         {
             Random raiderChance = new Random();
-            int raiderTry = raiderChance.Next(1, 8);
-            int resistanceTry = raiderChance.Next(0, 10);
+            int raiderTry = raiderChance.Next(1, 4);
+            int resistanceTry = raiderChance.Next(0, 5);
             if (raiderTry == 1)
             {
                 Console.WriteLine();
                 Console.WriteLine("You've been raided!");
-                if(resistanceTry<4)
+                if (resistanceTry < 3)
                 {
                     Console.WriteLine();
                     Console.WriteLine("You tried to resistance and lost! They made away\n" +

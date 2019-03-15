@@ -44,17 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NexusOfTheGalaxy.cs" />
-    <Compile Include="PlanetAlphaCenturian3.cs" />
-    <Compile Include="PlanetEarth.cs" />
-    <Compile Include="PlanetLayout.cs" />
-    <Compile Include="PlanetObicromPersei8.cs" />
-    <Compile Include="PlanetProximaB.cs" />
-    <Compile Include="PlanetTitanAE.cs" />
+    <Compile Include="GalaxyClass.cs" />
+    <Compile Include="GamePlayClass.cs" />
+    <Compile Include="Planets.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RaiderAttack.cs" />
-    <Compile Include="RiskyRaiderAttack.cs" />
+    <Compile Include="RaidersAttack.cs" />
     <Compile Include="ShipOne.cs" />
   </ItemGroup>
   <ItemGroup>

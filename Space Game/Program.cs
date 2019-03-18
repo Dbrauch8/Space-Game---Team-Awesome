@@ -12,8 +12,9 @@ namespace Space_Game
         {
             Player player = new Player();
             player.ChooseShip();
-        
 
+            GamePlayClass newGame = new GamePlayClass();
+            newGame.NexusOfTheGalaxy();
 
             //NexusOfTheGalaxy nexusOfTheGalaxy = new NexusOfTheGalaxy();
             //nexusOfTheGalaxy.PlanetaryChoices();

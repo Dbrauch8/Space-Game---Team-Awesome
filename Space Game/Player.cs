@@ -16,7 +16,6 @@ namespace Space_Game
             SpaceShip spaceBallOne = new SpaceShip("SpaceBall 1", 150, 150, 8.5,  614, "$45,000");
             SpaceShip jupiterTwo   = new SpaceShip("Jupiter 2",   100, 100, 9.5,  857, "$40,000");
 
-
             Console.WriteLine("Choose Your Ship");
             Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
 

@@ -38,12 +38,10 @@ namespace Space_Game
                 MaxCargo,
                 MaxWarpSpeed,
                 MaxRange);
-
+            
             Console.ReadLine();
             String imgPath = Console.ReadLine();
             System.Diagnostics.Process.Start(@"C:\Users\dougc\Pictures.\falcon5.jpg", imgPath);
-
-
 
             FuelQuantity();
             //CargoInventory(myShip);

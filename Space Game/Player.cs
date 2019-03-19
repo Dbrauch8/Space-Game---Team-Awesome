@@ -9,7 +9,7 @@ namespace Space_Game
     class Player
     {
         //class Character;
-
+        Character myChar;
         public void ChooseCharacter()
         {
             Character myChar;
@@ -32,10 +32,9 @@ namespace Space_Game
             Console.WriteLine("************************************************************************************************************************");
             Console.WriteLine("Furiosa \nFuriosa is from the dangerous planet of Obicrom Persei 8. She grew up battling bandits around her planet and has navigated " +
                 "all around the galaxy. If you choose your journey with this adventurer, you will begin from Obicrom Persei 8");
-
             Console.ReadLine();
 
-            Console.WriteLine("Make your seletion >> (1) to be Ellen Ripley | (2) to be Dark Helmet | (3) to be Groot | (4) to be Furiosa");
+            Console.WriteLine("Make your seletion is >> (1) to be Ellen Ripley | (2) to be Dark Helmet | (3) to be Groot | (4) to be Furiosa");
          
             char num = Console.ReadKey().KeyChar;
 
@@ -116,6 +115,7 @@ namespace Space_Game
             Console.Clear();
             myShip.ShipSelection();
         }
+
         //GamePlay class method calls...?
 
         //class GamePlay

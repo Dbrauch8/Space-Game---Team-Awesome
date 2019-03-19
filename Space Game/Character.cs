@@ -22,10 +22,9 @@ namespace Space_Game
         {
             Console.WriteLine("You selected to explore the galaxy as " + CharName);
 
-            Console.WriteLine("\nYou  " + "Home planet=> {2}",
-                BirthPlanet);
+            Console.WriteLine("\nYour Home planet is " + BirthPlanet);
+            Console.ReadLine();
         }
-        
     }
 
 }

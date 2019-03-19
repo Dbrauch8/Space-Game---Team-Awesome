@@ -38,23 +38,23 @@ namespace Space_Game
                 MaxRange);
             
             Console.ReadLine();
-            String imgPath = Console.ReadLine();
-            System.Diagnostics.Process.Start(@"C:\Users\dougc\Pictures.\falcon5.jpg", imgPath);
+            //String imgPath = Console.ReadLine();
+            //System.Diagnostics.Process.Start(@"C:\Users\dougc\Pictures.\falcon5.jpg", imgPath);
 
-            FuelQuantity();
+            //FuelQuantity();
             //CargoInventory(myShip);
-        }
-        private void FuelQuantity()
-        {
-            double distance = 1;
-            double time = distance / Math.Pow(MaxWarpSpeed, 3.33333 + (Math.Pow((10.0 - MaxWarpSpeed), 3.67)));
-            var speed = Math.Pow(MaxWarpSpeed, 3.33333 + (Math.Pow((12.0 - MaxWarpSpeed), 3.67)));
+        //}
+        //private void FuelQuantity()
+        //{
+        //    double distance = 1;
+        //    double time = distance / Math.Pow(MaxWarpSpeed, 3.33333 + (Math.Pow((10.0 - MaxWarpSpeed), 3.67)));
+        //    var speed = Math.Pow(MaxWarpSpeed, 3.33333 + (Math.Pow((12.0 - MaxWarpSpeed), 3.67)));
             //double time = distance / (((myShip.MaxWarpSpeed) * ((10 / 3) + Math.Pow(12.0 - 5.0, (3.67);
-            double fuelLevel = MaxFuel - (time * MaxFuel / 365);
+            //double fuelLevel = MaxFuel - (time * MaxFuel / 365);
 
-            Console.WriteLine("\nIts time to kick the tires and light the fires!");
-            Console.WriteLine("Fuel remaining= " + fuelLevel + "\nSpeed = " + speed);
-            Console.ReadLine();
+            //Console.WriteLine("\nIts time to kick the tires and light the fires!");
+            //Console.WriteLine("Fuel remaining= " + fuelLevel + "\nSpeed = " + speed);
+            //Console.ReadLine();
         }
 
         //private static void CargoInventory(SpaceShip myShip)

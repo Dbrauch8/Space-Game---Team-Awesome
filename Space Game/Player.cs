@@ -56,9 +56,9 @@ namespace Space_Game
                 default:
                     myChar = null;
                     break;
-                    Console.Clear();
-                    myChar.CharSelection();
             }
+            Console.Clear();
+            myChar.CharSelection();
         }
 
         public void ChooseShip()
@@ -115,7 +115,6 @@ namespace Space_Game
             }
             Console.Clear();
             myShip.ShipSelection();
-
         }
         //GamePlay class method calls...?
 

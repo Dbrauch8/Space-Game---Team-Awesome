@@ -18,6 +18,7 @@ namespace Space_Game
 
         public void PlanetEarth()
         {
+            Console.Clear();
             planets.Name = "Earth";
             planets.Entrance = "\nMain Square of Earth\n\nYou stand in the midst of a bustling trade center.  There are various\n" +
                               "shops and stalls littering the central square. You notice\n" +
@@ -36,9 +37,28 @@ namespace Space_Game
                                   "of fuel grades are gone.  You only have the one choice. Helium 3.\n" +
                                   "The price is 50 credits a unit. Time to decide if you fill up\n" +
                                   "or put in what you can afford\n\nExits: South";
-            planets.ShopList = earthShopOneInv;
+            planets.ShopList = new List<string>() { "Gold", "Statue", "Sword" };
             Console.WriteLine($"{planets.Name}\n\n{planets.Entrance}");
-            PlanetNavigation();
+            bool test = true;
+            while (test)
+            {
+                var input = Console.ReadLine();
+                switch (input)
+                {
+                    case "shop":
+                        for (int x = 0; x < planets.ShopList.Count; x++)
+                        {
+                            Console.WriteLine($"{x + 1}: {planets.ShopList[x]}");
+                        }
+                        break;
+                    default:
+                        PlanetEarth();
+                        break;
+                }
+            }
+            
+
+            //PlanetNavigation();
 
         }
 

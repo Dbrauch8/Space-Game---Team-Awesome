@@ -10,8 +10,8 @@ namespace Space_Game
     {
         static void Main(string[] args)
         {
-            Player player = new Player();
-            player.ChooseShip();
+            //Player player = new Player();
+            //player.ChooseShip();
 
             GamePlayClass newGame = new GamePlayClass();
             newGame.NexusOfTheGalaxy();

@@ -8,7 +8,6 @@ using System.Text;
 
 namespace Space_Game
 {
-
     public class SpaceShip
     {
         public string Name { get; private set; }
@@ -30,7 +29,6 @@ namespace Space_Game
 
         public void ShipSelection()
         {
-
             Console.WriteLine("Congratulations!! You selected " + Name);
 
             Console.WriteLine("\nPerformance parameters for your ship: " + "\nMax Fuel=>  {0} | Max Cargo=>  {1} | Max Warp Speed=> {2}",
@@ -46,10 +44,8 @@ namespace Space_Game
             FuelQuantity();
             //CargoInventory(myShip);
         }
-
         private void FuelQuantity()
         {
-
             double distance = 1;
             double time = distance / Math.Pow(MaxWarpSpeed, 3.33333 + (Math.Pow((10.0 - MaxWarpSpeed), 3.67)));
             var speed = Math.Pow(MaxWarpSpeed, 3.33333 + (Math.Pow((12.0 - MaxWarpSpeed), 3.67)));
@@ -59,7 +55,6 @@ namespace Space_Game
             Console.WriteLine("\nIts time to kick the tires and light the fires!");
             Console.WriteLine("Fuel remaining= " + fuelLevel + "\nSpeed = " + speed);
             Console.ReadLine();
-
         }
 
         //private static void CargoInventory(SpaceShip myShip)

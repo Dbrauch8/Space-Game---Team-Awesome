@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Character.cs" />
     <Compile Include="GalaxyClass.cs" />
     <Compile Include="GamePlayClass.cs" />
     <Compile Include="Planets.cs" />

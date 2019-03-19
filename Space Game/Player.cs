@@ -8,10 +8,62 @@ namespace Space_Game
 {
     class Player
     {
-        SpaceShip myShip;
+        //class Character;
+
+        public void ChooseCharacter()
+        {
+            Character myChar;
+            Character ellenRipley = new Character("Ellen Ripley", "Female", "Earth");
+            Character darkHelmet = new Character("Dark Helmet", "Male", "Alpha Cinturi");
+            Character groot = new Character("Groot", "Male", "TitanAE");
+            Character furiosa = new Character("Furiosa", "Female", "Obicrom Persei 8");
+
+            Console.WriteLine("Choose your character");
+            Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
+
+            Console.WriteLine(" Ellen Ripley. \nEllen is from Earth and spent many years of her life as an intergalactic Soldier, defending mankind from dangerous" +
+                "alien invaders. If you choose to be in Ellen's shoes for this adventure, you will begin on planet Earth.");
+            Console.WriteLine("************************************************************************************************************************");
+            Console.WriteLine("Dark Helmet. \nDark Helmet is a reformed space pirate from planet Alpha Centuri. If you choose to be Dark Helmet you " +
+                "will begin the game from Alpha Centuri.");
+            Console.WriteLine("************************************************************************************************************************");
+            Console.WriteLine("Groot. \nGroot is an alien from TitanAE where the native beings resemble trees. He enjoys sunshine and rainy days. " +
+                "If you choose your journey as Groot, you will begin on TitanAE.");
+            Console.WriteLine("************************************************************************************************************************");
+            Console.WriteLine("Furiosa \nFuriosa is from the dangerous planet of Obicrom Persei 8. She grew up battling bandits around her planet and has navigated " +
+                "all around the galaxy. If you choose your journey with this adventurer, you will begin from Obicrom Persei 8");
+
+            Console.ReadLine();
+
+            Console.WriteLine("Make your seletion >> (1) to be Ellen Ripley | (2) to be Dark Helmet | (3) to be Groot | (4) to be Furiosa");
+         
+            char num = Console.ReadKey().KeyChar;
+
+            switch (num)
+            {
+                case '1':
+                    myChar = ellenRipley;
+                    break;
+                case '2':
+                    myChar = darkHelmet;
+                    break;
+                case '3':
+                    myChar = groot;
+                    break;
+                case '4':
+                    myChar = furiosa;
+                    break;
+                default:
+                    myChar = null;
+                    break;
+                    Console.Clear();
+                    myChar.CharSelection();
+            }
+        }
 
         public void ChooseShip()
         {
+            SpaceShip myShip;
             SpaceShip falconFive   = new SpaceShip("Falcon 5",     80,  80,  11, 1331, "$50,000");
             SpaceShip spaceBallOne = new SpaceShip("SpaceBall 1", 150, 150, 8.5,  614, "$45,000");
             SpaceShip jupiterTwo   = new SpaceShip("Jupiter 2",   100, 100, 9.5,  857, "$40,000");
@@ -61,10 +113,15 @@ namespace Space_Game
                     myShip = null;
                     break;
             }
-
             Console.Clear();
-
             myShip.ShipSelection();
+
         }
+        //GamePlay class method calls...?
+
+        //class GamePlay
+        //{
+        //    GamePlay NexusOfTheGalaxy
+        //}
     }
 }

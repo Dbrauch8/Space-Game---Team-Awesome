@@ -57,16 +57,7 @@ namespace Space_Game
             //Console.ReadLine();
         }
 
-        //private static void CargoInventory(SpaceShip myShip)
-        //{
-        //    //double weight;
-        //    double cargoTotal = 80;
-        //    double spaceRemaining; // Will be calculated based on items purchases (need variable)
-        //    spaceRemaining = myShip.MaxCargo - cargoTotal;
-        //    Console.WriteLine("Remaining cargo space= " + spaceRemaining);
-        //    Console.WriteLine("Total cargo= " + cargoTotal);
-        //    Console.WriteLine();
-        //}
+
 
     }
 

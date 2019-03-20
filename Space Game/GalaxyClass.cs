@@ -81,7 +81,6 @@ namespace Space_Game
                                   "or put in what you can afford\n\nExits: South";
             Console.WriteLine($"{planets.Name}\n\n{planets.Entrance}");
             PlanetNavigation();
-
         }
 
         public void PlantetObicromPersei8()

@@ -117,9 +117,18 @@ namespace Space_Game
             Console.Clear();
             myShip.ShipSelection();
             charName.CharSelection();
-            Console.WriteLine("Lets kick the tires and light the fires!");
-            Console.ReadLine();
             begin.NexusOfTheGalaxy();
+        }
+
+        public static void CargoInventory(SpaceShip myShip)
+        {
+            //double weight;
+            double cargoTotal = 80;
+            double spaceRemaining; // Will be calculated based on items purchases (need variable)
+            spaceRemaining = myShip.MaxCargo - cargoTotal;
+            Console.WriteLine("Remaining cargo space= " + spaceRemaining);
+            Console.WriteLine("Total cargo= " + cargoTotal);
+            Console.WriteLine();
         }
         //GamePlay class method calls...?
 

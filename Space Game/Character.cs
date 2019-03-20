@@ -20,9 +20,7 @@ namespace Space_Game
         }
         public void CharSelection()
         {
-            Console.WriteLine("You selected to explore the galaxy as " + CharName);
-
-            Console.WriteLine("\nYour Home planet is " + BirthPlanet);
+            Console.WriteLine("You selected to explore the galaxy as " + CharName +". Your Home planet is " + BirthPlanet +". \n\nPress any key to continue.");
             Console.ReadLine();
         }
     }

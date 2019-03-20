@@ -14,6 +14,7 @@ namespace Space_Game
 
         public void NexusOfTheGalaxy()
         {
+            Console.Clear();
             Console.WriteLine("Welcome to the Nexus of the Galaxy.\n\n" +
                               "Where would you like to go?\n\n" +
                               "\t1. Earth\n" +

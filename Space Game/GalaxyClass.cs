@@ -10,11 +10,8 @@ namespace Space_Game
     {
         public RaidersAttack raidersAttack = new RaidersAttack();
         Planets planets = new Planets();
-        public List<string> earthShopOneInv = new List<string>() { "Gold\t1000cr", "Silver\t500cr", "Iron\t100cr" };
+        public List<string> earthShopOneInv = new List<string>() { "Gold\t\t1000cr", "Silver\t500cr", "Iron\t\t100cr" };
         public List<string> titanShopOneInv = new List<string>() { "Tin\t1000cr", "Silver\t500cr", "Iron\t100cr" };
-
-
-
 
         public void PlanetEarth()
         {
@@ -143,7 +140,7 @@ namespace Space_Game
             {
                 var input = Console.ReadLine();
 
-                switch (input)
+                switch (input.ToLower())
                 {
                     case "n":
                         Console.WriteLine(planets.FuelStation);
@@ -158,6 +155,7 @@ namespace Space_Game
                         ShopOTwoNavigation();
                         break;
                     case "leave":
+                    case "l":
                         Console.WriteLine("\nYou enter a swirling vortex of chaos.  You are blinded\n" +
                                           "by the light. When your vision returns you see several portals.");
                         Console.WriteLine("\nWhich planet would you like to travel to?\n" +

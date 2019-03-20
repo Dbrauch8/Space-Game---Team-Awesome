@@ -67,6 +67,7 @@ namespace Space_Game
             SpaceShip spaceBallOne = new SpaceShip("SpaceBall 1", 150, 150, 8.5,  614, "$45,000");
             SpaceShip jupiterTwo   = new SpaceShip("Jupiter 2",   100, 100, 9.5,  857, "$40,000");
 
+            Console.Clear();
             Console.WriteLine("Choose Your Ship");
             Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
 
@@ -116,6 +117,8 @@ namespace Space_Game
             Console.Clear();
             myShip.ShipSelection();
             charName.CharSelection();
+            Console.WriteLine("Lets kick the tires and light the fires!");
+            Console.ReadLine();
             begin.NexusOfTheGalaxy();
         }
         //GamePlay class method calls...?

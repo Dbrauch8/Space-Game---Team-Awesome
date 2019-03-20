@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 namespace Space_Game
 {
     class Player
-    {
-        //class Character;
-        Character myChar;
+    {   
+        Character charName;
+        SpaceShip myShip;
+        GamePlayClass begin = new GamePlayClass();
+        
         public void ChooseCharacter()
         {
-            Character myChar;
             Character ellenRipley = new Character("Ellen Ripley", "Female", "Earth");
             Character darkHelmet = new Character("Dark Helmet", "Male", "Alpha Cinturi");
             Character groot = new Character("Groot", "Male", "TitanAE");
@@ -32,7 +33,6 @@ namespace Space_Game
             Console.WriteLine("************************************************************************************************************************");
             Console.WriteLine("Furiosa \nFuriosa is from the dangerous planet of Obicrom Persei 8. She grew up battling bandits around her planet and has navigated " +
                 "all around the galaxy. If you choose your journey with this adventurer, you will begin from Obicrom Persei 8");
-            Console.ReadLine();
 
             Console.WriteLine("Make your seletion is >> (1) to be Ellen Ripley | (2) to be Dark Helmet | (3) to be Groot | (4) to be Furiosa");
          
@@ -41,28 +41,28 @@ namespace Space_Game
             switch (num)
             {
                 case '1':
-                    myChar = ellenRipley;
+                    charName = ellenRipley;
                     break;
                 case '2':
-                    myChar = darkHelmet;
+                    charName = darkHelmet;
                     break;
                 case '3':
-                    myChar = groot;
+                    charName = groot;
                     break;
                 case '4':
-                    myChar = furiosa;
+                    charName = furiosa;
                     break;
                 default:
-                    myChar = null;
+                    charName = null;
                     break;
             }
             Console.Clear();
-            myChar.CharSelection();
+            //Console.ReadLine();
+            charName.CharSelection();
         }
 
         public void ChooseShip()
         {
-            SpaceShip myShip;
             SpaceShip falconFive   = new SpaceShip("Falcon 5",     80,  80,  11, 1331, "$50,000");
             SpaceShip spaceBallOne = new SpaceShip("SpaceBall 1", 150, 150, 8.5,  614, "$45,000");
             SpaceShip jupiterTwo   = new SpaceShip("Jupiter 2",   100, 100, 9.5,  857, "$40,000");
@@ -112,10 +112,12 @@ namespace Space_Game
                     myShip = null;
                     break;
             }
+
             Console.Clear();
             myShip.ShipSelection();
+            charName.CharSelection();
+            begin.NexusOfTheGalaxy();
         }
-
         //GamePlay class method calls...?
 
         //class GamePlay
